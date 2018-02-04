@@ -1,24 +1,30 @@
 fileFormatVersion: 2
 guid: 9369ae0468b7a4fcbbb869b9e2800e4a
-timeCreated: 1456785214
+timeCreated: 1517777052
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
     21300000: CalleRecta
-    21300002: Calles_1
-    21300004: Calles_2
-    21300006: Calles_3
-    21300008: Calles_4
+    21300002: roadStraigtLeft
+    21300004: roadCurve
+    21300006: roadDouble
+    21300008: roadDivision
     21300010: Bus
     21300012: Coche
-  serializedVersion: 2
+    21300014: roadStraigtMid
+    21300016: car
+    21300018: bus
+  externalObjects: {}
+  serializedVersion: 4
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
+    sRGBTexture: 1
     linearTexture: 0
-    correctGamma: 0
     fadeOut: 0
     borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
     mipMapFadeDistanceStart: 1
     mipMapFadeDistanceEnd: 3
   bumpmap:
@@ -28,23 +34,22 @@ TextureImporter:
     normalMapFilter: 0
   isReadable: 0
   grayScaleToAlpha: 0
-  generateCubemap: 0
+  generateCubemap: 6
   cubemapConvolution: 0
-  cubemapConvolutionSteps: 8
-  cubemapConvolutionExponent: 1.5
   seamlessCubemap: 0
   textureFormat: -1
   maxTextureSize: 2048
   textureSettings:
+    serializedVersion: 2
     filterMode: 1
     aniso: 16
     mipBias: -1
-    wrapMode: 1
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
   nPOTScale: 0
   lightmap: 0
-  rGBM: 0
   compressionQuality: 50
-  allowsAlphaSplitting: 0
   spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
@@ -52,12 +57,56 @@ TextureImporter:
   spritePivot: {x: 0.5, y: 0.5}
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spritePixelsToUnits: 100
+  alphaUsage: 1
   alphaIsTransparency: 1
+  spriteTessellationDetail: -1
   textureType: 8
-  buildTargetSettings: []
+  textureShape: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
   spriteSheet:
+    serializedVersion: 2
     sprites:
-    - name: CalleRecta
+    - serializedVersion: 2
+      name: roadStraigtMid
       rect:
         serializedVersion: 2
         x: 0
@@ -65,14 +114,13 @@ TextureImporter:
         width: 1024
         height: 576
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -512, y: 288}
-        - {x: -512, y: -288}
-        - {x: 512, y: -288}
-        - {x: 512, y: 288}
-    - name: Calles_1
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: roadStraigtLeft
       rect:
         serializedVersion: 2
         x: 1024
@@ -80,14 +128,13 @@ TextureImporter:
         width: 1024
         height: 576
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -512, y: 288}
-        - {x: -512, y: -288}
-        - {x: 512, y: -288}
-        - {x: 512, y: 288}
-    - name: Calles_2
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: roadCurve
       rect:
         serializedVersion: 2
         x: 0
@@ -95,14 +142,13 @@ TextureImporter:
         width: 1024
         height: 576
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -512, y: 288}
-        - {x: -512, y: -288}
-        - {x: 512, y: -288}
-        - {x: 512, y: 288}
-    - name: Calles_3
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: roadDouble
       rect:
         serializedVersion: 2
         x: 1024
@@ -110,14 +156,13 @@ TextureImporter:
         width: 1024
         height: 576
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -512, y: 288}
-        - {x: -512, y: -288}
-        - {x: 512, y: -288}
-        - {x: 512, y: 288}
-    - name: Calles_4
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: roadDivision
       rect:
         serializedVersion: 2
         x: 0
@@ -125,59 +170,41 @@ TextureImporter:
         width: 1024
         height: 576
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -512, y: 288}
-        - {x: -512, y: -288}
-        - {x: 512, y: -288}
-        - {x: 512, y: 288}
-    - name: Bus
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: car
       rect:
         serializedVersion: 2
-        x: 1185
-        y: 422
-        width: 137
-        height: 362
+        x: 1519
+        y: 520
+        width: 92
+        height: 154
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: 65.5, y: 74}
-        - {x: 64.5, y: 179}
-        - {x: 62.5, y: 181}
-        - {x: -18.5, y: 181}
-        - {x: -22.5, y: 179}
-        - {x: -54.5, y: 160}
-        - {x: -63.5, y: 146}
-        - {x: -65.5, y: 119}
-        - {x: -65.5, y: 84}
-        - {x: -62.5, y: 83}
-        - {x: -65.5, y: -80}
-        - {x: -65.5, y: -151}
-        - {x: -61.5, y: -178}
-        - {x: 22.5, y: -178}
-        - {x: 40.5, y: -176}
-        - {x: 53.5, y: -147}
-        - {x: 65.5, y: -105}
-    - name: Coche
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: bus
       rect:
         serializedVersion: 2
-        x: 1516
-        y: 518
-        width: 99
-        height: 159
+        x: 1189
+        y: 425
+        width: 127
+        height: 357
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -39.5, y: 78.5}
-        - {x: -49.5, y: 74.5}
-        - {x: -49.5, y: -79.5}
-        - {x: 44.5, y: -79.5}
-        - {x: 49.5, y: -76.5}
-        - {x: 49.5, y: 78.5}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
     outline: []
+    physicsShape: []
   spritePackingTag: 
   userData: 
   assetBundleName: 
