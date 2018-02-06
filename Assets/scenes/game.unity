@@ -447,10 +447,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   roadContainerGO: {fileID: 0}
   roads: []
-  speed: 18
   engineOn: 0
+  speed: 15
   roadCounter: 0
   roadNumberSelector: 0
+  prevRoad: {fileID: 0}
+  prevRoadSize: 0
+  screenLimit: {x: 0, y: 0, z: 0}
+  outOfScreen: 1
 --- !u!1 &540492280
 GameObject:
   m_ObjectHideFlags: 0
@@ -540,7 +544,7 @@ GameObject:
   m_Component:
   - component: {fileID: 635793879}
   m_Layer: 0
-  m_Name: road_1
+  m_Name: roadTemplate1
   m_TagString: road
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -560,8 +564,8 @@ Transform:
   - {fileID: 69132274}
   - {fileID: 479215321}
   - {fileID: 1619294792}
-  m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_Father: {fileID: 955522144}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &905700702
 GameObject:
@@ -573,7 +577,7 @@ GameObject:
   - component: {fileID: 905700703}
   m_Layer: 0
   m_Name: road_0
-  m_TagString: Untagged
+  m_TagString: Respawn
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -692,7 +696,8 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 635793879}
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1012,7 +1017,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1696437019}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 353, y: 400.29962, z: 0}
+  m_LocalPosition: {x: 353, y: 399.89966, z: 0}
   m_LocalScale: {x: 0.9999897, y: 0.9999897, z: 0.9999897}
   m_Children: []
   m_Father: {fileID: 1712160820}
@@ -1144,8 +1149,8 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1712160816}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 267, y: 167, z: 0}
-  m_LocalScale: {x: 0.4171875, y: 0.4171875, z: 0.4171875}
+  m_LocalPosition: {x: 398.5, y: 249, z: 0}
+  m_LocalScale: {x: 0.6226562, y: 0.6226562, z: 0.6226562}
   m_Children:
   - {fileID: 1967414573}
   - {fileID: 1696437020}
@@ -1181,7 +1186,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1967414572}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -357, y: 400.29974, z: 0}
+  m_LocalPosition: {x: -357, y: 399.89978, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1712160820}
