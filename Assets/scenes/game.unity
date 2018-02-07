@@ -415,7 +415,7 @@ GameObject:
   - component: {fileID: 502209858}
   m_Layer: 0
   m_Name: roadGenerator
-  m_TagString: Untagged
+  m_TagString: roadGenerator
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -577,7 +577,7 @@ GameObject:
   - component: {fileID: 905700703}
   m_Layer: 0
   m_Name: road_0
-  m_TagString: Respawn
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -598,6 +598,52 @@ Transform:
   - {fileID: 1065218002}
   m_Father: {fileID: 502209857}
   m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &908924767
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 908924769}
+  - component: {fileID: 908924768}
+  m_Layer: 0
+  m_Name: chronometer
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &908924768
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 908924767}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0efeadfe9259401448159094f5f5bd6e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  roadGeneratorGO: {fileID: 0}
+  roadGeneratorScript: {fileID: 0}
+  time: 0
+  distance: 0
+  txtTime: {fileID: 1967414574}
+  txtDistance: {fileID: 1696437021}
+--- !u!4 &908924769
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 908924767}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 10.449565, y: 6.5057697, z: 14.366214}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &921777774
 GameObject:
@@ -1017,7 +1063,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1696437019}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 353, y: 399.89966, z: 0}
+  m_LocalPosition: {x: 353, y: 400.54425, z: 0}
   m_LocalScale: {x: 0.9999897, y: 0.9999897, z: 0.9999897}
   m_Children: []
   m_Father: {fileID: 1712160820}
@@ -1149,8 +1195,8 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1712160816}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 398.5, y: 249, z: 0}
-  m_LocalScale: {x: 0.6226562, y: 0.6226562, z: 0.6226562}
+  m_LocalPosition: {x: 294, y: 184, z: 0}
+  m_LocalScale: {x: 0.459375, y: 0.459375, z: 0.459375}
   m_Children:
   - {fileID: 1967414573}
   - {fileID: 1696437020}
@@ -1186,7 +1232,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1967414572}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -357, y: 399.89978, z: 0}
+  m_LocalPosition: {x: -357, y: 400.54437, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1712160820}

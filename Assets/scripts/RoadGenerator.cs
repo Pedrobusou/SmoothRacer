@@ -69,12 +69,12 @@ public class RoadGenerator : MonoBehaviour {
     void Update() {
         if (engineOn) {
             transform.Translate(Vector3.down * speed * Time.deltaTime);
-        }
 
-        if (!outOfScreen && prevRoad.transform.position.y + prevRoadSize < screenLimit.y) {
-            outOfScreen = true;
-            Destroy(prevRoad);
-            generateRoad();
+            if (!outOfScreen && prevRoad.transform.position.y + prevRoadSize < screenLimit.y) {
+                outOfScreen = true;
+                Destroy(prevRoad);
+                generateRoad();
+            }
         }
     }
 }
