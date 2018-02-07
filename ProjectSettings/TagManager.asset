@@ -7,6 +7,8 @@ TagManager:
   - road
   - roadPiece
   - roadGenerator
+  - carController
+  - regressiveCount
   layers:
   - Default
   - TransparentFX

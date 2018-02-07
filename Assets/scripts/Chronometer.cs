@@ -18,8 +18,8 @@ public class Chronometer : MonoBehaviour {
 		roadGeneratorGO = GameObject.FindGameObjectWithTag("roadGenerator");
 		roadGeneratorScript = roadGeneratorGO.GetComponent<RoadGenerator>();
 
-		time = 20;
-		txtTime.text = "2:00";
+		time = 5;
+		txtTime.text = "0:05";
 		txtDistance.text = "0";
 	}
 
