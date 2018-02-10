@@ -18,7 +18,18 @@ public class RoadGenerator : MonoBehaviour {
     public Vector3 screenLimit;
     public bool outOfScreen = true;
 
+    public GameObject carGO;
+    public GameObject soundFxGO;
+    public SoundFx soundFxScript;
+    public GameObject gameOverScreen;
+
     void Start() {
+        gameOverScreen = GameObject.FindGameObjectWithTag("gameOver");
+        gameOverScreen.SetActive(false);
+        carGO = GameObject.FindGameObjectWithTag("Player");
+        soundFxGO = GameObject.FindObjectOfType<SoundFx>().gameObject;
+        soundFxScript = soundFxGO.GetComponent<SoundFx>();
+
         searchRoads();
         generateRoad();
         getScreenSize();
@@ -64,6 +75,12 @@ public class RoadGenerator : MonoBehaviour {
 
     void getScreenSize() {
         screenLimit = new Vector3(0, GameObject.FindGameObjectWithTag("MainCamera").GetComponent<Camera>().ScreenToWorldPoint(new Vector3(0, 0, 0)).y - 0.5f, 0);
+    }
+
+    public void gameOver() {
+        carGO.GetComponent<AudioSource>().Stop();
+        soundFxScript.playEndMusic();
+        gameOverScreen.SetActive(true);
     }
 
     void Update() {
