@@ -7,7 +7,7 @@ public class Chronometer : MonoBehaviour {
 	public GameObject roadGeneratorGO;
 	public RoadGenerator roadGeneratorScript;
 
-	public float time;
+	public float time = 5;
 	public float distance;
 
 	public Text txtTime;
@@ -15,12 +15,10 @@ public class Chronometer : MonoBehaviour {
 
 	public Text finalDistanceTxt;
 
-	// Use this for initialization
 	void Start() {
 		roadGeneratorGO = GameObject.FindGameObjectWithTag("roadGenerator");
 		roadGeneratorScript = roadGeneratorGO.GetComponent<RoadGenerator>();
 
-		time = 5;
 		txtTime.text = "0:05";
 		txtDistance.text = "0";
 	}
@@ -44,7 +42,7 @@ public class Chronometer : MonoBehaviour {
 		if (time <= 0 && roadGeneratorScript.engineOn) {
 			roadGeneratorScript.engineOn = false;
 			roadGeneratorScript.gameOver();
-			finalDistanceTxt.text = ((int)distance).ToString()+ " M";
+			finalDistanceTxt.text = ((int)distance).ToString()+ " m";
 		}
 	}
 }

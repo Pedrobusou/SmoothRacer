@@ -6,7 +6,7 @@ public class CarController : MonoBehaviour {
 	public GameObject carGO;
 
 	public float turnAngle = 45;
-	public float speed = 25;
+	public float speed = 15;
 
 	void Start() {
 		carGO = GameObject.FindGameObjectWithTag("Player");

@@ -52,8 +52,4 @@ public class RegressiveCounter : MonoBehaviour {
 	void startRegressiveCount() {
 		StartCoroutine(counter());
 	}
-
-	void Update() {
-
-	}
 }

@@ -18,7 +18,7 @@ public class Bus : MonoBehaviour {
 	}
 
 	void OnTriggerEnter2D(Collider2D collider) {
-		if (collider.GetComponent<Car>()) {
+		if (collider.CompareTag("Player")) {
 			soundFxScript.playCrashFx();
 			chronometerScript.time = chronometerScript.time - 20;
 			Destroy(this.gameObject);

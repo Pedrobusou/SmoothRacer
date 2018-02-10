@@ -68,7 +68,9 @@ public class RoadGenerator : MonoBehaviour {
     float getRoadSize(GameObject road) {
         float roadSize = 0;
         for (int i = 0; i < road.transform.childCount; i++) {
-            roadSize += road.transform.GetChild(i).gameObject.GetComponent<SpriteRenderer>().bounds.size.y;
+            if (road.transform.GetChild(i).CompareTag("roadPiece")) {
+                roadSize += road.transform.GetChild(i).gameObject.GetComponent<SpriteRenderer>().bounds.size.y;
+            }
         }
         return roadSize;
     }
