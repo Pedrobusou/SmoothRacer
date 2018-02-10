@@ -9,6 +9,7 @@ TagManager:
   - roadGenerator
   - carController
   - regressiveCount
+  - bus
   layers:
   - Default
   - TransparentFX
