@@ -248,7 +248,7 @@ GameObject:
   - component: {fileID: 142743186}
   - component: {fileID: 142743185}
   m_Layer: 5
-  m_Name: finalDistanceTxt
+  m_Name: title2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -475,7 +475,7 @@ GameObject:
   - component: {fileID: 564389044}
   - component: {fileID: 564389043}
   m_Layer: 5
-  m_Name: gameOver
+  m_Name: start
   m_TagString: gameOver
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -630,7 +630,7 @@ GameObject:
   - component: {fileID: 974868985}
   - component: {fileID: 974868984}
   m_Layer: 5
-  m_Name: endTxt
+  m_Name: title1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -643,7 +643,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 974868982}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 400.22534, z: 0}
+  m_LocalPosition: {x: 0, y: 480, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 564389042}
@@ -775,8 +775,8 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1712160816}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 177.5, y: 111, z: 0}
-  m_LocalScale: {x: 0.27734375, y: 0.27734375, z: 0.27734375}
+  m_LocalPosition: {x: 512, y: 384, z: 0}
+  m_LocalScale: {x: 0.8, y: 0.8, z: 0.8}
   m_Children:
   - {fileID: 564389042}
   - {fileID: 800807892}
@@ -813,7 +813,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1712736434}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.000061035156, y: -369.23035, z: 0}
+  m_LocalPosition: {x: -0.000061035156, y: -449.005, z: 0}
   m_LocalScale: {x: 1.0000069, y: 1.0000069, z: 1.0000069}
   m_Children: []
   m_Father: {fileID: 564389042}
